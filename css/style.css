@@ -1,0 +1,109 @@
+/*General*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/*Services*/
+
+.card {
+    background-color: #f1f1f1;
+}
+
+.card-title {
+    color: #000;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.btn-info {
+    background-color: #00cfff;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #009fc4;
+}
+
+
+/*Faq*/
+
+.faq-section input,
+.faq-section p {
+    display: none;
+}
+
+.faq-section input[type=checkbox]:checked~p {
+    display: block;
+    color: #444;
+    font-size: 1em;
+    text-overflow: clip;
+    white-space: normal;
+    overflow: visible;
+}
+
+.faq-section label {
+    font-size: 1.2em;
+    cursor: pointer;
+    background: #eee;
+    display: block;
+    position: relative;
+    padding: 7px 10px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-left: 3px solid #888;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    transition: all .15s ease-out;
+}
+
+.faq-section input[type=checkbox]:checked~label {
+    border-color: #ff7f50;
+    background: #f5deb4;
+    background-image: linear-gradient(to bottom, #fff, #f5deb4);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .4);
+}
+
+.faq-section label::before {
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: inherit;
+}
+
+.faq-section input[type=checkbox]:checked~label::before {
+    border: 6px solid transparent;
+    border-top-color: inherit;
+    margin-top: -3px;
+    right: 10px;
+}
+
+
+/*Contact*/
+
+.contact-section {
+    background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
